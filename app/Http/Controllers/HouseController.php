@@ -46,8 +46,8 @@ class HouseController extends Controller
      */
     public function show($id)
     {
-        $houses = House::all();
-        return "Esta es la casa $houses";
+        $house = House::find($id);
+        return view('houses.show',compact('house'));
     }
 
     /**

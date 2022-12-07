@@ -21,7 +21,8 @@
 </head>
 
 <body style="background-color: #EEEAE1">
-    <nav class="navbar navbar-expand-lg mb-3 sticky-top">
+    <x-navbar></x-navbar>
+    {{-- <nav class="navbar navbar-expand-lg mb-3 sticky-top">
         <div class="container-fluid">
             <a class="navbar-brand d-flex align-items-center me-5" href="{{ url('/') }}">
                 <img src="{{ asset('storage/img/bg-logo1.png') }}" alt="" style="height: 40px">
@@ -60,7 +61,7 @@
                 </ul>
             </div>
         </div>
-    </nav>
+    </nav> --}}
 
     @yield('content')
 
